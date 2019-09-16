@@ -1,5 +1,8 @@
+<!DOCTYPE html>
+<html>
 <head>
-<style>
+	<title>Intencity</title>
+	<style>
 .button {
   background-color: #F32905;
   border: none;
@@ -12,14 +15,31 @@
   margin: 10px 15px;
   cursor: pointer;
 }
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown:hover .button {
+  background-color: #8B0000;
+}
 </style>
 </head>
 <body>
-<h1><center> 
-	<img src="logo.png"></center></h1>
+<h1><center> <img src="logo.png"></center></h1>
 <center>
-<input type="button" class="button" onclick="window.location.href = '/arcadechamp/cashsheet.html';" value="Collection">
-<input type="button" class="button" onclick="window.location.href = '/arcadechamp/assetrelocation.html';" value="Request Game Relocation">
-<input type="button" class="button" onclick="window.location.href = '/arcadechamp/stocktake.html';" value="Stocktake">
-<input type="button" class="button" onclick="window.location.href = '/arcadechamp/request.html';" value="Request for Stock">
+<div class="dropdown"> 
+	<button class="button" onclick="window.location.href = '/arcadechamp/siteselection.html'">Collection</button>
+</div>
+<div class="dropdown"> 
+	<button class="button" onclick="window.location.href = '/arcadechamp/assetrelocation.html'">Request Game Relocation</button>
+	</div>
+<div class="dropdown"> 
+	<button class="button" onclick="window.location.href = '/arcadechamp/stocktake.html'">Stocktake</button>
+	</div>
+<div class="dropdown"> 
+	<button class="button" onclick="window.location.href = '/arcadechamp/request.html'">Request for Stock</button>
+</div>
+
 </center>
+</body>
+</html>
